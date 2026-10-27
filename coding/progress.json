@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "learner": {
+    "language": "Python",
+    "timezone": "Asia/Shanghai",
+    "daily_minutes": 90,
+    "target_companies": [
+      "Meta",
+      "ByteDance"
+    ],
+    "target_role": "Recommendation Algorithm Engineer, 3-5 YOE"
+  },
+  "curriculum": {
+    "start_date": "2026-10-27",
+    "current_week": 1,
+    "current_topic": "array-hash-string"
+  },
+  "topics": {},
+  "problems": {},
+  "review_queue": [],
+  "stats": {
+    "independent": 0,
+    "hinted": 0,
+    "failed": 0,
+    "retained": 0
+  }
+}

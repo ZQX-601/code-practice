@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coding Interview Coach"
+  short_description: "面向 Meta 与字节推荐算法岗位的长期 Coding 教练"
+  default_prompt: "Use $coding-interview-coach to start today’s adaptive coding interview training."

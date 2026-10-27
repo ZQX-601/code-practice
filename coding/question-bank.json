@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-27",
+  "problems": [
+    {
+      "id": "leetcode-1",
+      "title": "Two Sum",
+      "url": "https://leetcode.com/problems/two-sum/",
+      "difficulty": "easy",
+      "topics": [
+        "array",
+        "hash-map"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-217",
+      "title": "Contains Duplicate",
+      "url": "https://leetcode.com/problems/contains-duplicate/",
+      "difficulty": "easy",
+      "topics": [
+        "array",
+        "hash-set"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-242",
+      "title": "Valid Anagram",
+      "url": "https://leetcode.com/problems/valid-anagram/",
+      "difficulty": "easy",
+      "topics": [
+        "string",
+        "counting"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-125",
+      "title": "Valid Palindrome",
+      "url": "https://leetcode.com/problems/valid-palindrome/",
+      "difficulty": "easy",
+      "topics": [
+        "string",
+        "two-pointers"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-283",
+      "title": "Move Zeroes",
+      "url": "https://leetcode.com/problems/move-zeroes/",
+      "difficulty": "easy",
+      "topics": [
+        "array",
+        "two-pointers"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-704",
+      "title": "Binary Search",
+      "url": "https://leetcode.com/problems/binary-search/",
+      "difficulty": "easy",
+      "topics": [
+        "binary-search"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-20",
+      "title": "Valid Parentheses",
+      "url": "https://leetcode.com/problems/valid-parentheses/",
+      "difficulty": "easy",
+      "topics": [
+        "stack",
+        "string"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-206",
+      "title": "Reverse Linked List",
+      "url": "https://leetcode.com/problems/reverse-linked-list/",
+      "difficulty": "easy",
+      "topics": [
+        "linked-list"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-104",
+      "title": "Maximum Depth of Binary Tree",
+      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "difficulty": "easy",
+      "topics": [
+        "tree",
+        "dfs",
+        "bfs"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-3",
+      "title": "Longest Substring Without Repeating Characters",
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "difficulty": "medium",
+      "topics": [
+        "sliding-window",
+        "hash-map"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    }
+  ]
+}
