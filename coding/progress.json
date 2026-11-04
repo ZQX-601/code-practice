@@ -15,12 +15,180 @@
     "current_week": 1,
     "current_topic": "array-hash-string"
   },
-  "topics": {},
-  "problems": {},
-  "review_queue": [],
+  "topics": {
+    "array-hash-string": {
+      "state": "practicing",
+      "evidence": [
+        "001-contains-duplicate-v2.py",
+        "002-two-sum.py",
+        "003-valid-anagram.py"
+      ],
+      "notes": "尚无陌生变体或延迟复习证据，主题未掌握。"
+    }
+  },
+  "problems": {
+    "217": {
+      "state": "practicing",
+      "attempts": [
+        {
+          "date": "2026-11-04",
+          "file": "coding/sessions/2026-11-04/001-contains-duplicate-v2.py",
+          "outcome": "hinted",
+          "notes": "集合优化使用了实质提示；空间复杂度误答 O(log n)，已讲解。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    },
+    "1": {
+      "state": "independent",
+      "attempts": [
+        {
+          "date": "2026-11-04",
+          "file": "coding/sessions/2026-11-04/002-two-sum.py",
+          "outcome": "independent",
+          "notes": "代码独立正确；返回下标顺序已纠正，复杂度与不变量尚未独立验证。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    },
+    "242": {
+      "state": "independent",
+      "attempts": [
+        {
+          "date": "2026-11-04",
+          "file": "coding/sessions/2026-11-04/003-valid-anagram.py",
+          "outcome": "independent",
+          "notes": "双字典计数独立正确；复杂度由教练讲解，尚未独立验证。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    }
+  },
+  "review_queue": [
+    {
+      "id": "217:2026-11-04:hinted:1",
+      "problem_id": "217",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-05",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "217:2026-11-04:hinted:2",
+      "problem_id": "217",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-07",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "217:2026-11-04:hinted:3",
+      "problem_id": "217",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "217:2026-11-04:hinted:4",
+      "problem_id": "217",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-18",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "217:2026-11-04:hinted:5",
+      "problem_id": "217",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-04",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "1:2026-11-04:independent:1",
+      "problem_id": "1",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-07",
+      "stage": 1,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "1:2026-11-04:independent:2",
+      "problem_id": "1",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "1:2026-11-04:independent:3",
+      "problem_id": "1",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-18",
+      "stage": 3,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "1:2026-11-04:independent:4",
+      "problem_id": "1",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-04",
+      "stage": 4,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "242:2026-11-04:independent:1",
+      "problem_id": "242",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-07",
+      "stage": 1,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "242:2026-11-04:independent:2",
+      "problem_id": "242",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "242:2026-11-04:independent:3",
+      "problem_id": "242",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-18",
+      "stage": 3,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "242:2026-11-04:independent:4",
+      "problem_id": "242",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-04",
+      "stage": 4,
+      "status": "pending",
+      "reason": "independent"
+    }
+  ],
   "stats": {
-    "independent": 0,
-    "hinted": 0,
+    "independent": 2,
+    "hinted": 1,
     "failed": 0,
     "retained": 0
   }
