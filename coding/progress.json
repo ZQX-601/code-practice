@@ -4,6 +4,12 @@
     "language": "Python",
     "timezone": "Asia/Shanghai",
     "daily_minutes": 90,
+        "training_days_per_week": 6,
+        "target_deadline": "2027-04-30",
+        "unique_problem_target": 260,
+        "core_mastery_target": 180,
+        "coverage_target": 80,
+        "effective_training_target": 500,
     "target_companies": [
       "Meta",
       "ByteDance"
@@ -21,9 +27,12 @@
       "evidence": [
         "001-contains-duplicate-v2.py",
         "002-two-sum.py",
-        "003-valid-anagram.py"
+        "003-valid-anagram.py",
+        "004-ransom-note.py",
+        "005-isomorphic-strings.py",
+        "006-word-pattern.py"
       ],
-      "notes": "尚无陌生变体或延迟复习证据，主题未掌握。"
+      "notes": "已独立完成多个标准题；LC383 复杂度分析仍需延迟复测。LC205 接受完整讲解后，已在 LC290 无新增提示完成即时迁移；LC290 空间分析经纠正后能说明同时存在的空间相加并由高阶项主导。开始进入 Medium，尚无延迟复习证据，主题未掌握。"
     }
   },
   "problems": {
@@ -61,6 +70,45 @@
           "file": "coding/sessions/2026-11-04/003-valid-anagram.py",
           "outcome": "independent",
           "notes": "双字典计数独立正确；复杂度由教练讲解，尚未独立验证。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    },
+    "383": {
+      "state": "independent",
+      "attempts": [
+        {
+          "date": "2026-11-04",
+          "file": "coding/sessions/2026-11-04/004-ransom-note.py",
+          "outcome": "independent",
+          "notes": "独立提交字符计数解法，8 个代表性用例通过；不变量解释正确。时间复杂度首次误判为 O(mn)，纠正后能说明顺序循环相加、嵌套循环相乘，仍待延迟复测。自测与用时未提交。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    },
+    "205": {
+      "state": "learning",
+      "attempts": [
+        {
+          "date": "2026-11-04",
+          "file": "coding/sessions/2026-11-04/005-isomorphic-strings.py",
+          "outcome": "learning",
+          "notes": "未形成解法；先给等级 2 提示，随后按学习者要求提供等级 5 完整讲解。本次不能计为独立完成。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    },
+    "290": {
+      "state": "independent",
+      "attempts": [
+        {
+          "date": "2026-11-04",
+          "file": "coding/sessions/2026-11-04/006-word-pattern.py",
+          "outcome": "independent",
+          "notes": "在 LC205 完整讲解后，无本题新增提示独立完成双向映射实现；8 个代表性用例通过。时间复杂度回答 O(n) 可接受；空间复杂度首次漏算 split，纠正后能说明 O(n+k) 由 O(n) 主导。自测和用时未提交。",
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -184,12 +232,131 @@
       "stage": 4,
       "status": "pending",
       "reason": "independent"
+    },
+    {
+      "id": "383:2026-11-04:independent:1",
+      "problem_id": "383",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-07",
+      "stage": 1,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "383:2026-11-04:independent:2",
+      "problem_id": "383",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "383:2026-11-04:independent:3",
+      "problem_id": "383",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-18",
+      "stage": 3,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "383:2026-11-04:independent:4",
+      "problem_id": "383",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-04",
+      "stage": 4,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "205:2026-11-04:hinted:1",
+      "problem_id": "205",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-05",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "205:2026-11-04:hinted:2",
+      "problem_id": "205",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-07",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "205:2026-11-04:hinted:3",
+      "problem_id": "205",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "205:2026-11-04:hinted:4",
+      "problem_id": "205",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-18",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "205:2026-11-04:hinted:5",
+      "problem_id": "205",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-04",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "290:2026-11-04:independent:1",
+      "problem_id": "290",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-07",
+      "stage": 1,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "290:2026-11-04:independent:2",
+      "problem_id": "290",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "290:2026-11-04:independent:3",
+      "problem_id": "290",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-18",
+      "stage": 3,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "290:2026-11-04:independent:4",
+      "problem_id": "290",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-04",
+      "stage": 4,
+      "status": "pending",
+      "reason": "independent"
     }
   ],
   "stats": {
-    "independent": 2,
-    "hinted": 1,
+    "independent": 4,
+    "hinted": 2,
     "failed": 0,
-    "retained": 0
+        "retained": 0,
+        "unique_problems_attempted": 6,
+        "effective_training_events": 6
   }
 }

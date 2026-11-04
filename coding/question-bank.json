@@ -180,6 +180,80 @@
         "role_relevance": 0.5,
         "source_diversity": 0.0
       }
+    },
+    {
+      "id": "leetcode-383",
+      "title": "Ransom Note",
+      "url": "https://leetcode.com/problems/ransom-note/",
+      "difficulty": "easy",
+      "topics": [
+        "string",
+        "counting"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-205",
+      "title": "Isomorphic Strings",
+      "url": "https://leetcode.com/problems/isomorphic-strings/",
+      "difficulty": "easy",
+      "topics": [
+        "string",
+        "hash-map"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-290",
+      "title": "Word Pattern",
+      "url": "https://leetcode.com/problems/word-pattern/",
+      "difficulty": "easy",
+      "topics": [
+        "string",
+        "hash-map"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
+    },
+    {
+      "id": "leetcode-49",
+      "title": "Group Anagrams",
+      "url": "https://leetcode.com/problems/group-anagrams/",
+      "difficulty": "medium",
+      "topics": [
+        "array",
+        "string",
+        "hash-map",
+        "sorting"
+      ],
+      "source_type": "curated-baseline",
+      "company_signals": [],
+      "ranking": {
+        "frequency": 0.0,
+        "recency": 0.0,
+        "role_relevance": 0.5,
+        "source_diversity": 0.0
+      }
     }
   ]
 }
