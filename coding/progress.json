@@ -4,12 +4,12 @@
     "language": "Python",
     "timezone": "Asia/Shanghai",
     "daily_minutes": 90,
-        "training_days_per_week": 6,
-        "target_deadline": "2027-04-30",
-        "unique_problem_target": 260,
-        "core_mastery_target": 180,
-        "coverage_target": 80,
-        "effective_training_target": 500,
+    "training_days_per_week": 6,
+    "target_deadline": "2027-04-30",
+    "unique_problem_target": 260,
+    "core_mastery_target": 180,
+    "coverage_target": 80,
+    "effective_training_target": 500,
     "target_companies": [
       "Meta",
       "ByteDance"
@@ -30,9 +30,12 @@
         "003-valid-anagram.py",
         "004-ransom-note.py",
         "005-isomorphic-strings.py",
-        "006-word-pattern.py"
+        "006-word-pattern.py",
+        "coding/sessions/2026-11-05/001-contains-duplicate-v1.py",
+        "coding/sessions/2026-11-05/002-isomorphic-strings.py",
+        "coding/sessions/2026-11-05/003-group-anagrams-count.fragment.txt"
       ],
-      "notes": "已独立完成多个标准题；LC383 复杂度分析仍需延迟复测。LC205 接受完整讲解后，已在 LC290 无新增提示完成即时迁移；LC290 空间分析经纠正后能说明同时存在的空间相加并由高阶项主导。开始进入 Medium，尚无延迟复习证据，主题未掌握。"
+      "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。主题仍为 practicing。"
     }
   },
   "problems": {
@@ -44,6 +47,15 @@
           "file": "coding/sessions/2026-11-04/001-contains-duplicate-v2.py",
           "outcome": "hinted",
           "notes": "集合优化使用了实质提示；空间复杂度误答 O(log n)，已讲解。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/001-contains-duplicate-v1.py",
+          "outcome": "independent",
+          "notes": "代码无提示独立重写正确。复杂度口述 O(k)，k 未定义；将 O(n) 叫作最差恶化，经教练澄清，尚未再次独立复述。",
+          "highest_hint_level": 0,
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -89,13 +101,22 @@
       ]
     },
     "205": {
-      "state": "learning",
+      "state": "independent",
       "attempts": [
         {
           "date": "2026-11-04",
           "file": "coding/sessions/2026-11-04/005-isomorphic-strings.py",
           "outcome": "learning",
           "notes": "未形成解法；先给等级 2 提示，随后按学习者要求提供等级 5 完整讲解。本次不能计为独立完成。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/002-isomorphic-strings.py",
+          "outcome": "independent",
+          "notes": "双向映射无提示独立重写正确；复杂度 O(n)、O(n) 上界正确，已讲解精确空间 O(k)。题目等长前提成立。",
+          "highest_hint_level": 0,
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -113,6 +134,20 @@
           "leetcode_submission_verified": false
         }
       ]
+    },
+    "49": {
+      "attempts": [
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/003-group-anagrams-count.fragment.txt",
+          "outcome": "hinted",
+          "notes": "主动请求完整讲解排序解法，随后正确补全排序键与 append；计数变体经逐步引导，识别 tuple 并提交正确核心片段。未提交完整函数；复杂度由教练解释，不能计为独立完成。",
+          "highest_hint_level": 5,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ],
+      "state": "learning"
     }
   },
   "review_queue": [
@@ -122,8 +157,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-05",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-05",
+      "result": "independent_code; see attempt notes"
     },
     {
       "id": "217:2026-11-04:hinted:2",
@@ -275,8 +312,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-05",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-05",
+      "result": "independent_code; see attempt notes"
     },
     {
       "id": "205:2026-11-04:hinted:2",
@@ -349,14 +388,59 @@
       "stage": 4,
       "status": "pending",
       "reason": "independent"
+    },
+    {
+      "id": "49:2026-11-05:hinted:1",
+      "problem_id": "49",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-06",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "49:2026-11-05:hinted:2",
+      "problem_id": "49",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-08",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "49:2026-11-05:hinted:3",
+      "problem_id": "49",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-12",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "49:2026-11-05:hinted:4",
+      "problem_id": "49",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-19",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "49:2026-11-05:hinted:5",
+      "problem_id": "49",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-05",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
     }
   ],
   "stats": {
-    "independent": 4,
-    "hinted": 2,
+    "independent": 6,
+    "hinted": 3,
     "failed": 0,
-        "retained": 0,
-        "unique_problems_attempted": 6,
-        "effective_training_events": 6
+    "retained": 0,
+    "unique_problems_attempted": 7,
+    "effective_training_events": 9
   }
 }
