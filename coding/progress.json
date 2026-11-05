@@ -33,9 +33,13 @@
         "006-word-pattern.py",
         "coding/sessions/2026-11-05/001-contains-duplicate-v1.py",
         "coding/sessions/2026-11-05/002-isomorphic-strings.py",
-        "coding/sessions/2026-11-05/003-group-anagrams-count.fragment.txt"
+        "coding/sessions/2026-11-05/003-group-anagrams-count.fragment.txt",
+        "coding/sessions/2026-11-05/004-valid-palindrome-v2.py",
+        "coding/sessions/2026-11-05/005-valid-anagram-sorted.py",
+        "coding/sessions/2026-11-05/005-valid-anagram-v2.py",
+        "coding/sessions/2026-11-05/006-longest-substring-without-repeating-v2.py"
       ],
-      "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。主题仍为 practicing。"
+      "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。误聊记录迁入：125 在 Level 4 提示后完成双指针并复述不变量；242 无关键提示完成排序版，Level 1 后完成线性字典版。LC3 无算法提示独立完成，复杂度经纠正后理解摊还 O(n)。主题仍为 practicing。"
     }
   },
   "problems": {
@@ -82,6 +86,24 @@
           "file": "coding/sessions/2026-11-04/003-valid-anagram.py",
           "outcome": "independent",
           "notes": "双字典计数独立正确；复杂度由教练讲解，尚未独立验证。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/005-valid-anagram-sorted.py",
+          "outcome": "independent",
+          "notes": "无解法提示完成排序版，8 个定向与 2000 个随机用例通过；能正确说明 O(n log n) 时间和 O(n) 空间。未提交自生成测试与 dry run。",
+          "highest_hint_level": 0,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/005-valid-anagram-v2.py",
+          "outcome": "independent",
+          "notes": "Level 1 诊断问题后自行选择双字典完成线性版本，9 个定向与 3000 个随机用例通过；时间 O(n+m)，空间 O(k)。学习者选择跳过自生成测试。",
+          "highest_hint_level": 1,
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -148,6 +170,43 @@
         }
       ],
       "state": "learning"
+    },
+    "125": {
+      "state": "practicing",
+      "attempts": [
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/004-valid-palindrome.py",
+          "outcome": "learning",
+          "notes": "提交前无算法提示，过滤、统一小写并反转比较在 ASCII 约束下正确；未自行说明复杂度、自测、用时或提示声明，随后请求 O(1) 做法。",
+          "highest_hint_level": 0,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/004-valid-palindrome-v2.py",
+          "outcome": "hinted",
+          "notes": "Level 4 结构提示后完成半开区间双指针；12 个边界与 2000 个随机用例通过，能复述外侧有效字符已成对验证的不变量；不计独立完成。",
+          "highest_hint_level": 4,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
+    },
+    "3": {
+      "state": "independent",
+      "attempts": [
+        {
+          "date": "2026-11-05",
+          "file": "coding/sessions/2026-11-05/006-longest-substring-without-repeating-v2.py",
+          "outcome": "independent",
+          "notes": "无算法提示独立完成正确实现；首次遗漏 defaultdict 导入并将摊还时间误判为 O(n log n)，修正后通过 11 个定向与 5000 个随机测试，理解时间 O(n)、空间 O(k) 最坏 O(n)。",
+          "highest_hint_level": 0,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ]
     }
   },
   "review_queue": [
@@ -433,14 +492,95 @@
       "stage": 5,
       "status": "pending",
       "reason": "hinted"
+    },
+    {
+      "id": "125:2026-11-05:hinted:1",
+      "problem_id": "125",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-06",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "125:2026-11-05:hinted:2",
+      "problem_id": "125",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-08",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "125:2026-11-05:hinted:3",
+      "problem_id": "125",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-12",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "125:2026-11-05:hinted:4",
+      "problem_id": "125",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-19",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "125:2026-11-05:hinted:5",
+      "problem_id": "125",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-05",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "3:2026-11-05:independent:1",
+      "problem_id": "3",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-08",
+      "stage": 1,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "3:2026-11-05:independent:2",
+      "problem_id": "3",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-12",
+      "stage": 2,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "3:2026-11-05:independent:3",
+      "problem_id": "3",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-19",
+      "stage": 3,
+      "status": "pending",
+      "reason": "independent"
+    },
+    {
+      "id": "3:2026-11-05:independent:4",
+      "problem_id": "3",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-05",
+      "stage": 4,
+      "status": "pending",
+      "reason": "independent"
     }
   ],
   "stats": {
-    "independent": 6,
-    "hinted": 3,
+    "independent": 8,
+    "hinted": 4,
     "failed": 0,
     "retained": 0,
-    "unique_problems_attempted": 7,
-    "effective_training_events": 9
+    "unique_problems_attempted": 9,
+    "effective_training_events": 12
   }
 }
