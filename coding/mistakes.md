@@ -13,3 +13,7 @@
 ## 2026-11-05
 - LC217：复杂度使用未定义 k，并混淆提前返回与最坏情况；complexity_not_acceptable。代码独立正确，复杂度待复测。
 - LC49：已知 set 不可作为键，但 initially 未提及集合丢失频次；concept_not_understood。已解释 abb/ab，后续用计数 tuple 检查理解。
+
+## 2026-11-07
+- complexity_not_acceptable：290 再次忽略 split 空间，讲解后仍答 O(1)，未通过，后续用小例子复测。49 漏算各组26元组；242 固定字母集空间应 O(1)；复杂度符号要定义。
+- pattern_not_recognized：128 起点判定、560 前缀和计数需完整讲解，后续独立复测。560 暴力扩展曾把 nums[right] 写成 nums[left]。
