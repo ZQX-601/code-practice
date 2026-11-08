@@ -38,9 +38,10 @@
         "coding/sessions/2026-11-05/005-valid-anagram-sorted.py",
         "coding/sessions/2026-11-05/005-valid-anagram-v2.py",
         "coding/sessions/2026-11-05/006-longest-substring-without-repeating-v2.py",
-        "coding/sessions/2026-11-07/plan.md"
+        "coding/sessions/2026-11-07/plan.md",
+        "coding/sessions/2026-11-08/plan.md"
       ],
-      "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。误聊记录迁入：125 在 Level 4 提示后完成双指针并复述不变量；242 无关键提示完成排序版，Level 1 后完成线性字典版。LC3 无算法提示独立完成，复杂度经纠正后理解摊还 O(n)。主题仍为 practicing。\n11-07 多个标准题独立实现；复杂度分析反复漏算 split，290 空间验证未通过。128、560 接受完整讲解后重写。205、217 今日复习未做，保持 pending。"
+      "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。误聊记录迁入：125 在 Level 4 提示后完成双指针并复述不变量；242 无关键提示完成排序版，Level 1 后完成线性字典版。LC3 无算法提示独立完成，复杂度经纠正后理解摊还 O(n)。主题仍为 practicing。\n11-07 多个标准题独立实现；复杂度分析反复漏算 split，290 空间验证未通过。128、560 接受完整讲解后重写。205、217 今日复习未做，保持 pending。\n11-08：560、128延迟独立重写；560计数含义和复杂度符号需巩固。238完整讲解后完成，724基础独立/优化提示后完成，303朴素独立/优化提示后完成；前缀和端点定义尚需复测。"
     }
   },
   "problems": {
@@ -264,9 +265,17 @@
           "highest_hint_level": 5,
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/002-longest-consecutive-attempt.py",
+          "outcome": "independent",
+          "notes": "独立延迟复写正确，平均时间O(n)、空间O(n)回答正确。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
         }
       ],
-      "state": "learning"
+      "state": "independent"
     },
     "349": {
       "attempts": [
@@ -334,9 +343,72 @@
           "highest_hint_level": 5,
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/001-subarray-sum-attempt.py",
+          "outcome": "independent",
+          "notes": "独立延迟复写正确。counts 注释误称连续子串数量，已纠正为旧前缀和出现次数；空间 O(k) 与目标k混淆，已纠正最坏O(n)。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ],
+      "state": "independent"
+    },
+    "238": {
+      "attempts": [
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/003-product-except-self-attempt.py",
+          "outcome": "hinted",
+          "notes": "起初无思路；能补出左右递推下标，随后请求完整答案。接受基础与O(1)空间版本完整讲解后重写正确，能注释先乘答案后更新right。不能计独立完成；复杂度由教练解释。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
         }
       ],
       "state": "learning"
+    },
+    "724": {
+      "attempts": [
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/004-pivot-index-v1-attempt.py",
+          "outcome": "independent",
+          "notes": "独立将左右乘积迁移成左右和，代码及O(n)时间/空间正确。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/005-pivot-index-v2-attempt.py",
+          "outcome": "hinted",
+          "notes": "经总和减左和减当前值公式及更新顺序提示，完成O(1)空间优化。能指出本题允许减法，而238禁止除法。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ],
+      "state": "independent"
+    },
+    "303": {
+      "attempts": [
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/006-range-sum-v1.py",
+          "outcome": "independent",
+          "notes": "朴素循环求和正确但不满足查询O(1)；初始化只保存引用，因此额外空间O(1)，不是学习者回答的O(n)。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-08",
+          "file": "coding/sessions/2026-11-08/006-range-sum-v2.py",
+          "outcome": "hinted",
+          "notes": "经完整前缀和构建及right+1公式提示完成优化；初次填公式right,left漏右端点。初始化O(n)、查询O(1)、空间O(n)由教练解释。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        }
+      ],
+      "state": "practicing"
     }
   },
   "review_queue": [
@@ -720,8 +792,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-08",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-08",
+      "result": "independent_code; see review for complexity"
     },
     {
       "id": "128:2026-11-07:hinted:2",
@@ -909,8 +983,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-08",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-08",
+      "result": "independent_code; see review for complexity"
     },
     {
       "id": "560:2026-11-07:hinted:2",
@@ -947,14 +1023,149 @@
       "stage": 5,
       "status": "pending",
       "reason": "hinted"
+    },
+    {
+      "id": "238:2026-11-08:hinted:1",
+      "problem_id": "238",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-09",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "238:2026-11-08:hinted:2",
+      "problem_id": "238",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "238:2026-11-08:hinted:3",
+      "problem_id": "238",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-15",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "238:2026-11-08:hinted:4",
+      "problem_id": "238",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-22",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "238:2026-11-08:hinted:5",
+      "problem_id": "238",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-08",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "724:2026-11-08:hinted:1",
+      "problem_id": "724",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-09",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "724:2026-11-08:hinted:2",
+      "problem_id": "724",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "724:2026-11-08:hinted:3",
+      "problem_id": "724",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-15",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "724:2026-11-08:hinted:4",
+      "problem_id": "724",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-22",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "724:2026-11-08:hinted:5",
+      "problem_id": "724",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-08",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "303:2026-11-08:hinted:1",
+      "problem_id": "303",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-09",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "303:2026-11-08:hinted:2",
+      "problem_id": "303",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "303:2026-11-08:hinted:3",
+      "problem_id": "303",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-15",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "303:2026-11-08:hinted:4",
+      "problem_id": "303",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-22",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "303:2026-11-08:hinted:5",
+      "problem_id": "303",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-08",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
     }
   ],
   "stats": {
-    "independent": 17,
-    "hinted": 6,
+    "independent": 20,
+    "hinted": 9,
     "failed": 0,
     "retained": 0,
-    "unique_problems_attempted": 15,
-    "effective_training_events": 23
+    "unique_problems_attempted": 18,
+    "effective_training_events": 28
   }
 }
