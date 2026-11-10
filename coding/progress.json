@@ -46,7 +46,8 @@
         "coding/sessions/2026-11-09/009-contains-duplicate-review.py",
         "coding/sessions/2026-11-09/010-longest-substring-review.py",
         "coding/sessions/2026-11-09/011-minimum-size-subarray-sum-window.py",
-        "coding/sessions/2026-11-09/012-minimum-size-subarray-sum-binary-v2.py"
+        "coding/sessions/2026-11-09/012-minimum-size-subarray-sum-binary-v2.py",
+        "coding/sessions/2026-11-10/plan.md"
       ],
       "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。误聊记录迁入：125 在 Level 4 提示后完成双指针并复述不变量；242 无关键提示完成排序版，Level 1 后完成线性字典版。LC3 无算法提示独立完成，复杂度经纠正后理解摊还 O(n)。主题仍为 practicing。\n11-07 多个标准题独立实现；复杂度分析反复漏算 split，290 空间验证未通过。128、560 接受完整讲解后重写。205、217 今日复习未做，保持 pending。\n11-08：560、128延迟独立重写；560计数含义和复杂度符号需巩固。238完整讲解后完成，724基础独立/优化提示后完成，303朴素独立/优化提示后完成；前缀和端点定义尚需复测。\n11-09：303、238独立复写；523、525优化版讲解后重写；LC125 延迟复写代码和复杂度正确，但区间及不变量表达未完成；LC209 滑动窗口及前缀和二分均在提示或完整讲解后完成，二分版修正 prefix 末端边界后通过测试。"
     }
@@ -490,9 +491,18 @@
           "highest_hint_level": 5,
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/attempts.py",
+          "variant": "remainder",
+          "outcome": "independent",
+          "notes": "独立复写，保存最早余数下标，正确检查长度至少为 2。",
+          "highest_hint_level": 0,
+          "leetcode_submission_verified": false
         }
       ],
-      "state": "practicing"
+      "state": "independent"
     },
     "525": {
       "attempts": [
@@ -535,6 +545,38 @@
           "notes": "完整讲解后完成前缀和加手写 lower bound；第一版以 len(nums) 判断二分结果，漏掉合法前缀下标 n，修正为 len(prefix) 后通过定向与随机差分测试。时间 O(n log n)、空间 O(n)。",
           "highest_hint_level": 5,
           "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/attempts.py",
+          "variant": "window",
+          "outcome": "independent",
+          "notes": "滑动窗口独立正确，O(n) 时间、O(1) 空间。",
+          "highest_hint_level": 0,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/attempts.py",
+          "variant": "binary",
+          "outcome": "independent",
+          "notes": "独立写出前缀和与手写 lower bound，正确保留末端前缀下标 n。讨论了半开二分退出时 left == right。",
+          "highest_hint_level": 0,
+          "leetcode_submission_verified": false
+        }
+      ],
+      "state": "independent"
+    },
+    "713": {
+      "attempts": [
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/attempts.py",
+          "variant": "product-window",
+          "outcome": "hinted",
+          "notes": "完整讲解后重写。首次 k < 1 会在 k=1 越界，经反馈修正为 k <= 1。固定右端后计数 right-left+1。",
+          "highest_hint_level": 5,
           "leetcode_submission_verified": false
         }
       ],
@@ -1305,8 +1347,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-10",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-10",
+      "result": "independent_code"
     },
     {
       "id": "523:2026-11-09:hinted:2",
@@ -1395,8 +1439,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-10",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-10",
+      "result": "independent_code"
     },
     {
       "id": "209:2026-11-09:hinted:2",
@@ -1433,14 +1479,59 @@
       "stage": 5,
       "status": "pending",
       "reason": "hinted"
+    },
+    {
+      "id": "713:2026-11-10:hinted:1",
+      "problem_id": "713",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-11",
+      "stage": 1,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "713:2026-11-10:hinted:2",
+      "problem_id": "713",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-13",
+      "stage": 2,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "713:2026-11-10:hinted:3",
+      "problem_id": "713",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-17",
+      "stage": 3,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "713:2026-11-10:hinted:4",
+      "problem_id": "713",
+      "topic": "array-hash-string",
+      "due_date": "2026-11-24",
+      "stage": 4,
+      "status": "pending",
+      "reason": "hinted"
+    },
+    {
+      "id": "713:2026-11-10:hinted:5",
+      "problem_id": "713",
+      "topic": "array-hash-string",
+      "due_date": "2026-12-10",
+      "stage": 5,
+      "status": "pending",
+      "reason": "hinted"
     }
   ],
   "stats": {
-    "independent": 24,
-    "hinted": 15,
+    "independent": 27,
+    "hinted": 16,
     "failed": 0,
     "retained": 0,
-    "unique_problems_attempted": 21,
-    "effective_training_events": 38
+    "unique_problems_attempted": 22,
+    "effective_training_events": 44
   }
 }

@@ -30,3 +30,6 @@
 - LC3：11-09 复习前查看过旧记录，不计独立；能给出 O(n) 结论，但只能模糊说明 while 不会完整遍历。需记住 start 不回退、所有 while 总次数最多 n 的摊还证明。类别：complexity_not_acceptable。
 - LC209：滑动窗口代码正确，但 O(n) 理由仍停留在 while 不会完整遍历；应说明 left/right 各自最多移动 n 次。能识别负数使 total 不单调，需进一步说明移入负数可能减和、移出负数可能增和。类别：complexity_not_acceptable。
 - LC209 前缀和 + 二分：第一版用 `right < len(nums)` 判断二分是否找到结果，漏掉合法的前缀下标 `n`。类别：boundary_or_initialization。修正：二分搜索的是长度为 `n+1` 的 `prefix`，所以应判断 `right < len(prefix)`；修正版已通过测试，待隐藏旧解复测。
+
+## 2026-11-10
+713 漏 k=1。固定右端计数时，和 < k 加窗口长度，和 >= k 加已排除的起点数 left。后者首次在 while 内逐个累加，漏掉以前移出的起点。
