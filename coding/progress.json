@@ -47,7 +47,8 @@
         "coding/sessions/2026-11-09/010-longest-substring-review.py",
         "coding/sessions/2026-11-09/011-minimum-size-subarray-sum-window.py",
         "coding/sessions/2026-11-09/012-minimum-size-subarray-sum-binary-v2.py",
-        "coding/sessions/2026-11-10/plan.md"
+        "coding/sessions/2026-11-10/plan.md",
+        "coding/sessions/2026-11-10/001-longest-substring-review-submission.py"
       ],
       "notes": "11-05：217、205 延迟复写代码正确；217 复杂度措辞仍需验证。49 完整讲解后完成关键片段，未独立实现。误聊记录迁入：125 在 Level 4 提示后完成双指针并复述不变量；242 无关键提示完成排序版，Level 1 后完成线性字典版。LC3 无算法提示独立完成，复杂度经纠正后理解摊还 O(n)。主题仍为 practicing。\n11-07 多个标准题独立实现；复杂度分析反复漏算 split，290 空间验证未通过。128、560 接受完整讲解后重写。205、217 今日复习未做，保持 pending。\n11-08：560、128延迟独立重写；560计数含义和复杂度符号需巩固。238完整讲解后完成，724基础独立/优化提示后完成，303朴素独立/优化提示后完成；前缀和端点定义尚需复测。\n11-09：303、238独立复写；523、525优化版讲解后重写；LC125 延迟复写代码和复杂度正确，但区间及不变量表达未完成；LC209 滑动窗口及前缀和二分均在提示或完整讲解后完成，二分版修正 prefix 末端边界后通过测试。"
     }
@@ -240,6 +241,15 @@
           "highest_hint_level": 0,
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/002-group-anagrams-review-submission.py",
+          "outcome": "independent",
+          "notes": "隐藏旧解独立完成排序键版本，5 个定向与 3000 个随机差分测试通过。初答时间 O(nk)，经 Level 1 追问自行修正为 O(n*k log k)，能说明字符多重集合相同使排序键可靠，通过短期掌握验证。",
+          "highest_hint_level": 1,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
         }
       ],
       "state": "independent"
@@ -294,6 +304,15 @@
           "outcome": "hinted",
           "notes": "代码和 O(n)/O(n) 结论正确，但学习者明确查看过旧解题记录，不计独立；窗口条件正确，start 单调移动的摊还分析理由不完整。",
           "highest_hint_level": 5,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/001-longest-substring-review-submission.py",
+          "outcome": "independent",
+          "notes": "隐藏旧解独立代码正确，9 个定向与 5000 个随机差分测试通过；O(n) 时间、最坏 O(n) 空间结论和窗口无重复条件正确。经 Level 1 追问后选择跳过 left 总移动次数的摊还证明，不升级短期掌握。",
+          "highest_hint_level": 1,
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -395,9 +414,18 @@
           "notes": "独立延迟复写正确。counts 注释误称连续子串数量，已纠正为旧前缀和出现次数；空间 O(k) 与目标k混淆，已纠正最坏O(n)。",
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/005-subarray-sum-equals-k-review-submission.py",
+          "outcome": "hinted",
+          "notes": "完全无法独立回忆，查看旧题解后完成；代码通过 7 个定向与 5000 个随机测试。完整重建前缀差方程后，即时 teach-back 能推出 P[left]=P[right]-k 并选择频次字典，但不构成延迟掌握。",
+          "highest_hint_level": 5,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
         }
       ],
-      "state": "independent"
+      "state": "practicing"
     },
     "238": {
       "attempts": [
@@ -436,6 +464,15 @@
           "file": "coding/sessions/2026-11-08/005-pivot-index-v2-attempt.py",
           "outcome": "hinted",
           "notes": "经总和减左和减当前值公式及更新顺序提示，完成O(1)空间优化。能指出本题允许减法，而238禁止除法。",
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/003-find-pivot-index-review-submission.py",
+          "outcome": "independent",
+          "notes": "Level 1 暴力定义提示后自行恢复总和加单次扫描的 O(1) 空间优化；7 个定向与 5000 个随机差分测试通过，O(n)/O(1) 及 left_sum 半开前缀不变量正确，通过短期掌握验证。",
+          "highest_hint_level": 1,
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -511,6 +548,15 @@
           "file": "coding/sessions/2026-11-09/005-contiguous-array.py",
           "outcome": "hinted",
           "notes": "完整讲解后重写正确。把 0 视为 -1，相同 balance 表示净变化为零，保留最早下标以最大化长度。",
+          "highest_hint_level": 5,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-10",
+          "file": "coding/sessions/2026-11-10/004-contiguous-array-review-submission.py",
+          "outcome": "hinted",
+          "notes": "明确查看旧提交后完成，不计独立回忆；代码通过 7 个定向与 5000 个随机测试，随后能正确解释 balance、相同状态、最早下标以及 O(n)/O(n)。",
           "highest_hint_level": 5,
           "timing_minutes": null,
           "leetcode_submission_verified": false
@@ -851,8 +897,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-08",
       "stage": 2,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-10",
+      "result": "independent_sort_key_solution; complexity self-corrected after level-1 prompt"
     },
     {
       "id": "49:2026-11-05:hinted:3",
@@ -934,8 +982,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-08",
       "stage": 1,
-      "status": "pending",
-      "reason": "independent"
+      "status": "completed",
+      "reason": "independent",
+      "completed_on": "2026-11-10",
+      "result": "independent_code_and_complexity_result; amortized proof skipped"
     },
     {
       "id": "3:2026-11-05:independent:2",
@@ -1172,8 +1222,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-10",
       "stage": 2,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-10",
+      "result": "solution reviewed; immediate equation teach-back passed; delayed retrieval failed"
     },
     {
       "id": "560:2026-11-07:hinted:3",
@@ -1255,8 +1307,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-09",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-10",
+      "result": "optimized_solution_recalled_after_level-1_brute_definition_prompt"
     },
     {
       "id": "724:2026-11-08:hinted:2",
@@ -1394,8 +1448,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-10",
       "stage": 1,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-10",
+      "result": "correct_after_reviewing_old_submission; not independent"
     },
     {
       "id": "525:2026-11-09:hinted:2",
@@ -1527,11 +1583,11 @@
     }
   ],
   "stats": {
-    "independent": 27,
-    "hinted": 16,
+    "independent": 30,
+    "hinted": 18,
     "failed": 0,
     "retained": 0,
     "unique_problems_attempted": 22,
-    "effective_training_events": 44
+    "effective_training_events": 49
   }
 }

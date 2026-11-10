@@ -33,3 +33,8 @@
 
 ## 2026-11-10
 713 漏 k=1。固定右端计数时，和 < k 加窗口长度，和 >= k 加已排除的起点数 left。后者首次在 while 内逐个累加，漏掉以前移出的起点。
+- LC3：第三次能给出 O(n) 结论，但仍未独立陈述 `left` 不回退且所有 while 总次数最多 n 的摊还证明，本次选择跳过。类别：complexity_not_acceptable。代码与窗口无重复条件正确，11-12 继续验证解释能力。
+- LC49：排序键代码正确，初答时间 O(nk) 漏掉每个长度 k 字符串的排序成本；Level 1 追问后自行修正为 O(n*k log k)。类别：complexity_not_acceptable；本次已当场修正，后续复习检查能否一次答对。
+- LC724：首次回忆时表示忘记，经 Level 1 暴力定义提示后自行恢复 O(1) 空间优化。类别：pattern_not_recognized。能正确说明 `left_sum` 是不含当前元素的 `nums[0:i]`，下一轮应无需提示直接推导。
+- LC525：首次到期复习依赖查看旧提交，不能作为记忆证据；随后能正确解释 balance、相同状态的差为 0、保留最早下标及 O(n)/O(n)。类别：pattern_not_recognized、variant_transfer_failure。用 LC560 检查相近结构的独立迁移。
+- 前缀和检索失败：LC525、LC560 均表现为查看旧解后立即理解，但隐藏旧解时无法从题意恢复方程。类别：pattern_not_recognized、variant_transfer_failure。修正：先写 `P[right]-P[left]=目标`，再移项求需要的旧状态；根据“是否存在/多少个/最长”分别选择集合/频次/最早下标，使用短推导和间隔复测替代重复抄模板。
