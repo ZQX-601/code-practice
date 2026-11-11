@@ -38,3 +38,6 @@
 - LC724：首次回忆时表示忘记，经 Level 1 暴力定义提示后自行恢复 O(1) 空间优化。类别：pattern_not_recognized。能正确说明 `left_sum` 是不含当前元素的 `nums[0:i]`，下一轮应无需提示直接推导。
 - LC525：首次到期复习依赖查看旧提交，不能作为记忆证据；随后能正确解释 balance、相同状态的差为 0、保留最早下标及 O(n)/O(n)。类别：pattern_not_recognized、variant_transfer_failure。用 LC560 检查相近结构的独立迁移。
 - 前缀和检索失败：LC525、LC560 均表现为查看旧解后立即理解，但隐藏旧解时无法从题意恢复方程。类别：pattern_not_recognized、variant_transfer_failure。修正：先写 `P[right]-P[left]=目标`，再移项求需要的旧状态；根据“是否存在/多少个/最长”分别选择集合/频次/最早下标，使用短推导和间隔复测替代重复抄模板。
+
+## 2026-11-11
+904 每轮重建 set、收缩时切片导致最坏 O(n²)。固定右端计数时严格小于阈值应排除和恰好等于阈值的区间。
