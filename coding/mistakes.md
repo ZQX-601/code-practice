@@ -40,4 +40,9 @@
 - 前缀和检索失败：LC525、LC560 均表现为查看旧解后立即理解，但隐藏旧解时无法从题意恢复方程。类别：pattern_not_recognized、variant_transfer_failure。修正：先写 `P[right]-P[left]=目标`，再移项求需要的旧状态；根据“是否存在/多少个/最长”分别选择集合/频次/最早下标，使用短推导和间隔复测替代重复抄模板。
 
 ## 2026-11-11
+- LC128：因题目不是连续区间而误归类为双指针；实际没有两个协调移动的指针，核心需求是 O(1) 平均存在性查询，应识别为哈希结构。初始 O(n) 理由不精确，经 Level 1 后能说明每个不同数字最多被一条序列扩展一次。类别：pattern_not_recognized、complexity_not_acceptable。
+- LC238：初始误归类为双指针，实际是前缀/后缀累计；反向变量初答包含当前元素 `nums[i:n]`，正确不变量是处理 i 前保存 `nums[i+1:n]`。经 Level 1 空区间反例修正。类别：pattern_not_recognized、boundary_or_initialization。
+- LC303：已能识别前缀和，但闭区间查询再次写成 `prefix[right]-prefix[left]`，漏掉 right；经单元素反例修正为 `prefix[right+1]-prefix[left]`。类别：boundary_or_initialization。后续必须先写 `prefix[i]=sum(nums[0:i])` 再推导。
+
+## 2026-11-11
 904 每轮重建 set、收缩时切片导致最坏 O(n²)。固定右端计数时严格小于阈值应排除和恰好等于阈值的区间。

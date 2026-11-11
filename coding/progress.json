@@ -337,6 +337,15 @@
           "notes": "独立延迟复写正确，平均时间O(n)、空间O(n)回答正确。",
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-11",
+          "file": "coding/sessions/2026-11-11/005-longest-consecutive-review-submission.py",
+          "outcome": "independent",
+          "notes": "Level 1 诊断后将方法从双指针修正为哈希结构，独立代码通过 7 个定向与 5000 个随机测试；Level 1 追问后说明每个不同数字最多被一条序列扩展一次，平均 O(n)、空间 O(n)，通过短期掌握验证。",
+          "highest_hint_level": 1,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
         }
       ],
       "state": "independent"
@@ -446,6 +455,15 @@
           "highest_hint_level": 0,
           "timing_minutes": null,
           "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-11",
+          "file": "coding/sessions/2026-11-11/006-product-except-self-review-v2.py",
+          "outcome": "independent",
+          "notes": "Level 1 后识别为前后缀累计，独立完成辅助数组版和 O(1) 额外空间版；两版各通过定向与 5000 个随机测试。右侧不变量经 Level 1 空区间反例修正为 nums[i+1:n]，通过短期掌握验证。",
+          "highest_hint_level": 1,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
         }
       ],
       "state": "independent"
@@ -504,6 +522,15 @@
           "outcome": "independent",
           "notes": "独立复写通过。初始化 O(n)，查询 O(1)，空间 O(n)。self.nums 未被查询使用。",
           "highest_hint_level": 0,
+          "timing_minutes": null,
+          "leetcode_submission_verified": false
+        },
+        {
+          "date": "2026-11-11",
+          "file": "coding/sessions/2026-11-11/007-range-sum-query-review-submission.py",
+          "outcome": "independent",
+          "notes": "识别前缀和及复杂度正确；闭区间公式初答漏右端点，经 Level 1 单元素反例后修正。代码通过定向查询和 1000 个随机数组的全部合法区间，通过短期掌握验证。",
+          "highest_hint_level": 1,
           "timing_minutes": null,
           "leetcode_submission_verified": false
         }
@@ -1079,8 +1106,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-10",
       "stage": 2,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-11",
+      "result": "independent_set_solution; classification and amortized proof corrected after level-1 prompts"
     },
     {
       "id": "128:2026-11-07:hinted:3",
@@ -1319,8 +1348,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-11",
       "stage": 2,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-11",
+      "result": "independent auxiliary-array and O(1)-extra-space solutions; invariant corrected after level-1 prompt"
     },
     {
       "id": "238:2026-11-08:hinted:3",
@@ -1413,8 +1444,10 @@
       "topic": "array-hash-string",
       "due_date": "2026-11-11",
       "stage": 2,
-      "status": "pending",
-      "reason": "hinted"
+      "status": "completed",
+      "reason": "hinted",
+      "completed_on": "2026-11-11",
+      "result": "independent prefix implementation; closed-interval boundary corrected after level-1 counterexample"
     },
     {
       "id": "303:2026-11-08:hinted:3",
@@ -1768,11 +1801,11 @@
     }
   ],
   "stats": {
-    "independent": 31,
+    "independent": 34,
     "hinted": 21,
     "failed": 0,
     "retained": 0,
     "unique_problems_attempted": 25,
-    "effective_training_events": 53
+    "effective_training_events": 56
   }
 }
